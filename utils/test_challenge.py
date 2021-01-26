@@ -61,7 +61,7 @@ class TestAddition(unittest.TestCase):
 class TestConnect(unittest.TestCase):
     """ A class to contain test methods for the connect_to_db function."""
 
-    def test_connection_string_is_test(self):
+    def test_connection_string(self):
         """ Verify that this function raises a ConnectionDatabaseError
             when a different connection string than 'test' is provided.
         """
