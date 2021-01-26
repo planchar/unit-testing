@@ -1,4 +1,4 @@
-""" In this module, I will create my answer to the challenge.
+""" This module contains the unit tests for the challenge.
 
     The must-haves:
         - one test for each function
@@ -8,11 +8,11 @@
     Done:
         - created the skeleton (classes, functions, imports)
         - added a unit test for add function
+        - added a unit test for connect_to_db
         - works from command line: run `python -m unittest` in /utils folder
         - formatted & commented
 
     Todo:
-        - a unit test for connect_to_db
         - a unit test for get_users_list_from_db
         - use pytest
         - use a Mock object
