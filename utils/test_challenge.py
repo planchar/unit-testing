@@ -62,11 +62,14 @@ class TestConnect(unittest.TestCase):
     """ A class to contain test methods for the connect_to_db function."""
 
     def test_connection_string(self):
-        """ Verify that this function raises a ConnectionDatabaseError
-            when a different connection string than 'test' is provided.
+        """ Verify that this function:
+            - raises a ConnectionDatabaseError when a different
+            connection string than 'test' is provided.
+            - raises a TestDbError when 'test' is provided.
         """
 
         self.assertRaises(ConnectionDatabaseError, connect_to_db, "godmode")
+        self.assertRaises(TestDbError, connect_to_db, "test")
 
 # Work in progress
 class TestGetUsers(unittest.TestCase):
