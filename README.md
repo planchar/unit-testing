@@ -1,6 +1,6 @@
 # Challenge: Unit Testing
 
-This repository contains an answer to an exercise to practice Unit Testing
+This repository will contain an answer to an exercise to practice Unit Testing
 in Python. The exercise is part of a training program at
 [BeCode](https://becode.org/) Antwerp.
 
