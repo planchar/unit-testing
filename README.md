@@ -1,15 +1,20 @@
 # Challenge: Unit Testing
 
-This repository will contain an answer to an exercise to practice Unit Testing
+This repository contains an answer to an exercise to practice Unit Testing
 in Python. The exercise is part of a training program at
 [BeCode](https://becode.org/) Antwerp.
 
 ## Notes:
 
-* The repository is still _under construction_.
-* Currently, it just contains the instructions and the code to test.
-* The provided instructions for the challenge are copied below.
-* The provided code to test can be found in [`utils/challenge.py`](./utils/challenge.py)
+* The exercise is _unfinished_.
+* Currently, the repository contains:
+  * this readme file that also contains the provided instructions (see further)
+  * the code to write unit tests for: see [`utils/challenge.py`](./utils/challenge.py)
+  * a partial solution: see [`utils/test_challenge.py`](./utils/test_challenge.py)
+  * an empty main.py file:
+* the unit tests should run from the command line; navigate to the /utils folder and
+run `python -m unittest` (or `python -m unittest test_challenge`)
+* for more documentation: check the code itself [`utils/test_challenge.py`](./utils/test_challenge.py)
 
 ## The instructions
 
