@@ -24,6 +24,7 @@ import unittest
 
 # import pytest  ## not used yet
 
+from challenge import ConnectionDatabaseError, TestDbError
 from challenge import add, connect_to_db , get_users_list_from_db
 
 
@@ -57,14 +58,15 @@ class TestAddition(unittest.TestCase):
         for triplet in triplets:
             assert add(triplet[0], triplet[1], triplet[2]) == sum(triplet)
 
-# Work in progress
 class TestConnect(unittest.TestCase):
     """ A class to contain test methods for the connect_to_db function."""
 
-    def test_something2(self):
-        """ TODO """
+    def test_connection_string_is_test(self):
+        """ Verify that this function raises a ConnectionDatabaseError
+            when a different connection string than 'test' is provided.
+        """
 
-        pass
+        self.assertRaises(ConnectionDatabaseError, connect_to_db, "godmode")
 
 # Work in progress
 class TestGetUsers(unittest.TestCase):
